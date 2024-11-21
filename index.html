@@ -1,11 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="weather_animated">
+      <select name="allCountriesName" id="allCountriesName">
+        <option value="" selected disabled>Select Country</option>
+      </select>
+      <select name="allStatesName" id="allStatesName">
+        <option value="" selected disabled>Select State</option>
+      </select>
+      <select name="allCitiesName" id="allCitiesName">
+        <option value="" selected disabled>Select City</option>
+      </select>
+      <div class="location">
+        <span id="countryName"></span>
+        <span id="stateName"></span>
+        <span id="cityName"></span> &nbsp; &nbsp;
+      </div>
+      <hr />
+      <div class="temperature-div">
+        <div class="temp">
+          <p>Temp</p>
+          <span id="temp"></span> <span>°c</span>
+        </div>
+        <div class="temp">
+          <p>Feels_Like</p>
+          <span id="feels_like"> </span><span>°c</span>
+        </div>
+        <div class="temp">
+          <p>Humidity</p>
+          <span id="humidity"></span> <span>%</span>
+        </div>
+        <div class="temp">
+          <p>Pressure</p>
+          <span id="pressure"></span>
+        </div>
+      </div>
+      <div class="temperature-div">
+        <div class="temp">
+          <p>Wind_Speed</p>
+          <span id="windSpeed"></span> <span>km/h</span>
+        </div>
+        <div class="temp">
+          <p>Sunrise</p>
+          <span id="sunrise"></span>
+        </div>
+        <div class="temp">
+          <p>Sunset</p>
+          <span id="sunset"></span>
+        </div>
+      </div>
+    </div>
+    <script src="jquery-3.7.0.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
